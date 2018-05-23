@@ -72,3 +72,19 @@ $(function () {
     }
   }
 });
+
+var swiper = new Swiper('.swiper-container', {
+  loop: true,
+  speed: 600,
+  autoplay: {
+    delay: 5000,
+  },
+  effect: 'fade',
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<div class="' + className + '">' + 0 + (index + 1) + '</div>';
+    },
+  },
+});

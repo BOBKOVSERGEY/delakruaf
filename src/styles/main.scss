@@ -3,7 +3,14 @@
 @import "fonts";
 @import "variables";
 
+@import "swiper";
+
+@import "logo";
 @import "menu";
+@import "header";
+@import "slider";
+
+
 @import "totop";
 
 html {
@@ -17,6 +24,12 @@ body {
 
 ul {
   margin-bottom: 0;
+}
+a:hover {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
 }
 
 @import "mediaqueries";

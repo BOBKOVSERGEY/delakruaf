@@ -1,0 +1,15 @@
+.logo {
+  text-align: center;
+
+  & img {
+    transition: all .3s ease;
+    &:hover {
+      transform: scale(.9);
+    }
+  }
+}
+@media only screen and (max-width : 992px) {
+  .logo {
+    display: none;
+  }
+}

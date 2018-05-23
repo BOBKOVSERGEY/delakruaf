@@ -1,0 +1,58 @@
+.header {
+  margin-top: 0px;
+  background-image: linear-gradient(
+                  to right bottom,
+                  rgba(#fff, 0.5),
+                  rgba(#fff, 0.5)), url(../images/bg-slider.jpg);
+  height: 900px;
+
+  &__blocks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__blocks-right {
+    background-color: rgba(#5c276d, .8);
+    width: 38%;
+    height: 600px;
+  }
+  &__blocks-left {
+    //background-color: rgba(#fff, .8);
+    width: 62%;
+  }
+  &__menu-logo {
+    margin-top: -860px;
+  }
+  &__menu-logo-link {
+    text-transform: uppercase;
+    color: #1a1a1d;
+    font-family: $fontMedium;
+    transition: all .3s ease;
+    font-size: 1.5rem;
+    display: inline-block;
+    margin-top: 8px;
+    &:hover {
+      font-family: $fontBold;
+      color: $colorPurple;
+      transform: translateX(1rem);
+    }
+  }
+}
+@media only screen and (max-width : 1350px) {
+  .header {
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (max-width : 1200px) {
+  .header {
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (max-width : 992px) {
+  .header {
+    margin-top: 0;
+  }
+}
