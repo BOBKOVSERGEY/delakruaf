@@ -269,6 +269,10 @@ autoprefixer@^7.0.0:
     postcss "^6.0.17"
     postcss-value-parser "^3.2.3"
 
+awesome-js-funcs@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/awesome-js-funcs/-/awesome-js-funcs-0.1.1.tgz#8545a68a99beb1304783a94fc87f9ad0917bacb3"
+
 aws-sign2@~0.6.0:
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/aws-sign2/-/aws-sign2-0.6.0.tgz#14342dd38dbcc94d0e5b87d763cd63612c0e794f"
@@ -4675,6 +4679,12 @@ svgo@^0.7.0:
     mkdirp "~0.5.1"
     sax "~1.2.1"
     whet.extend "~0.9.9"
+
+swiper-animation@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/swiper-animation/-/swiper-animation-1.2.0.tgz#0fd224e14ee3b5a88945d2d3edcd4e3bbccd2938"
+  dependencies:
+    awesome-js-funcs "^0.1.1"
 
 tar-stream@^1.1.1:
   version "1.6.1"

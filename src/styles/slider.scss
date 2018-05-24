@@ -1,12 +1,13 @@
 .slider {
-  margin-top: 50px;
+  margin-top: 40px;
   &__container {
     height: 669px;
   }
   &__item {
+    position: relative;
     background-position: center;
     background-size: cover;
-    /*&:after {
+    &:after {
       content: '';
       position: absolute;
       top: 0;
@@ -15,8 +16,8 @@
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(22, 88, 139, 0.5);
-    }*/
+      background: rgba(#fff, .1);
+    }
   }
   &__pagination {
     position: relative;
@@ -24,6 +25,68 @@
   }
   &__pagination-position {
     bottom: 0;
+  }
+  &__item-heading {
+    display: block;
+    font-family: $fontLight;
+    font-size: 6rem;
+    text-align: left;
+    margin-left: 10rem;
+    position: relative;
+    &:before {
+      content: '';
+      width: 50px;
+      height: 5px;
+      position: absolute;
+      background: $colorBrown;
+      left: 160px;
+    }
+  }
+  &__item-description {
+    display: block;
+    font-size: 1.5rem;
+    text-align: left;
+    margin-left: 10rem;
+    margin-top: 10rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  &__button {
+    position: absolute;
+    left:0;
+    bottom: 0;
+  }
+}
+
+@media only screen and (max-width : 1200px) {
+  .slider {
+    &__item-heading {
+      margin-left: 5rem;
+    }
+    &__item-description {
+      margin-left: 5rem;
+    }
+  }
+}
+
+@media only screen and (max-width : 992px) {
+  .slider {
+    &__item-heading {
+      margin-left: 5rem;
+      font-size: 40px;
+    }
+  }
+}
+
+@media only screen and (max-width : 480px) {
+  .slider {
+    &__item-heading {
+      margin-left: 1.5rem;
+      font-size: 28px;
+    }
+    &__item-description {
+      margin-left: 1.5rem;
+    }
   }
 }
 

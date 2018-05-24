@@ -19,6 +19,7 @@ var userAgent = navigator.userAgent.toLowerCase(),
     pointerEvents: isIE < 11 ? "js/pointer-events.min.js" : false,
     rdNavbar: $(".rd-navbar"),
     navbarToggle: $(".rd-navbar-toggle"),
+    swiper: $(".swiper-container")
 
 
   };
@@ -73,13 +74,24 @@ $(function () {
   }
 });
 
-var swiper = new Swiper('.swiper-container', {
-  loop: true,
+new WOW().init();
+
+var swiperAnimation = new SwiperAnimation();
+var mySwiper = new Swiper('.swiper-container', {
+  //loop: true,
   speed: 600,
-  autoplay: {
-    delay: 5000,
-  },
   effect: 'fade',
+  /*autoplay: {
+    delay: 5000,
+  },*/
+  on: {
+    init: function () {
+      swiperAnimation.init(this).animate();
+    },
+    slideChange: function () {
+      swiperAnimation.init(this).animate();
+    }
+  },
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -88,3 +100,19 @@ var swiper = new Swiper('.swiper-container', {
     },
   },
 });
+
+/*var swiperAnimation = new SwiperAnimation();
+var mySwiper = new Swiper('.swiper-container', {
+  hashNavigation: {
+    watchState: true,
+    replaceState: true
+  },
+  on: {
+    init: function () {
+      swiperAnimation.init(this).animate();
+    },
+    slideChange: function () {
+      swiperAnimation.init(this).animate();
+    }
+  }
+});*/
