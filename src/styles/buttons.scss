@@ -1,4 +1,55 @@
 .button {
+  &--average {
+    font-size: 13px;
+    //height: 66px;
+    background-color: rgba($colorPurple, .8);
+    color: #fff;
+    letter-spacing: 1px;
+    border-radius: 0;
+    transition: all .3s ease;
+    padding-right: 30px;
+    padding-left: 30px;
+    min-width: 164.67px;
+    &:hover {
+      background-color: rgba($colorBrown, .8);
+    }
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  &--average-add {
+    font-size: 13px;
+    text-transform: uppercase;
+    width: 73.5px;
+    height: 73.5px;
+    margin-right: -4px;
+    background-color: rgba(#fff, 1);
+    color: #000;
+    border-radius: 0;
+    transition: all .3s ease;
+    & img {
+      filter: drop-shadow(0px 0px 1px #000);
+    }
+    &:hover {
+      background-color: rgba(#fff, .8);
+    }
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  &__big-heading {
+    text-transform: uppercase;
+    font-family: $fontBold;
+    font-size: 30px;
+  }
+  &__small-heading {
+    font-family: $fontLight;
+    font-size: 15px;
+    text-transform: uppercase;
+    display: block;
+    margin-top: -7px;
+    margin-bottom: 4px;
+  }
   &--big {
     font-size: 13px;
     text-transform: uppercase;
@@ -32,6 +83,23 @@
     }
     &:focus {
       box-shadow: none;
+    }
+  }
+}
+
+@media only screen and (max-width : 1200px) {
+  .button {
+    &--average {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+  }
+}
+@media only screen and (max-width : 480px) {
+  .button {
+    &--average {
+      padding-right: 10px;
+      padding-left: 10px;
     }
   }
 }
