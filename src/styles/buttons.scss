@@ -1,4 +1,22 @@
 .button {
+  &--round {
+    font-size: 13px;
+    background-color: $colorPurple;
+    padding: 10px 15px;
+    color: #fff;
+    min-width: 140px;
+    border-radius: 3rem;
+    transition: all .3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    &:hover {
+      color: #fff;
+      background-color: $colorBrown;
+    }
+    &:focus {
+      box-shadow: none;
+    }
+  }
   &--average {
     font-size: 13px;
     //height: 66px;

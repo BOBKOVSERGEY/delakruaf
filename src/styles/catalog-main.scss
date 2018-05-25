@@ -1,13 +1,13 @@
 .catalog-main {
   position: relative;
   margin-top: 105px;
-  margin-bottom: 150px;
+  margin-bottom: 10px;
 
   &__box {
     position: relative;
     padding: 0 15px;
     z-index: 1;
-    & > [class*='col']:not(first-chaild) {
+    & > [class*='col'] {
       padding-left: 0;
       padding-right: 0;
     }
@@ -74,4 +74,5 @@
       transform: rotate(318deg);
     }
   }
+
 }

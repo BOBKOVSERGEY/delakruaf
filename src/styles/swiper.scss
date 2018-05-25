@@ -662,3 +662,32 @@ button.swiper-pagination-bullet {
     top: 8px;
   }
 }
+
+.swiper-pagination-about {
+  position: absolute;
+  text-align: center;
+  transition: 300ms opacity;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+  bottom: 30px!important;
+}
+.swiper-pagination-bullet-about {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 100%;
+  background: #000;
+  opacity: .2;
+  margin: 0 4px;
+  transition: .2s transform,.2s left,.2s -webkit-transform;
+  position: relative;
+}
+.swiper-pagination-bullet-about.swiper-pagination-bullet-active {
+  background: #fff;
+  opacity: .8;
+}
+.swiper-pagination-bullet-about.swiper-pagination-bullet-active:before {
+  content: '';
+  width: 0;
+  height: 0;
+}

@@ -77,7 +77,7 @@ $(function () {
 new WOW().init();
 
 var swiperAnimation = new SwiperAnimation();
-var mySwiper = new Swiper('.swiper-container', {
+var mySwiper = new Swiper('.slider__container', {
   //loop: true,
   speed: 600,
   effect: 'fade',
@@ -101,18 +101,13 @@ var mySwiper = new Swiper('.swiper-container', {
   },
 });
 
-/*var swiperAnimation = new SwiperAnimation();
-var mySwiper = new Swiper('.swiper-container', {
-  hashNavigation: {
-    watchState: true,
-    replaceState: true
-  },
-  on: {
-    init: function () {
-      swiperAnimation.init(this).animate();
-    },
-    slideChange: function () {
-      swiperAnimation.init(this).animate();
-    }
+var swiperAbout = new Swiper('.about-main__slider-container', {
+  pagination: {
+    el: '.swiper-pagination-about',
+    clickable: true,
+    dynamicBullets: true,
+    bulletClass: 'swiper-pagination-bullet-about',
+
+
   }
-});*/
+});
