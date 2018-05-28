@@ -111,3 +111,14 @@ var swiperAbout = new Swiper('.about-main__slider-container', {
 
   }
 });
+
+var swiperNewProduct = new Swiper('.product-new-main__slider-container', {
+  pagination: {
+    el: '.swiper-pagination-new-product',
+    clickable: true,
+    dynamicBullets: true,
+    bulletClass: 'swiper-pagination-bullet-product-new',
+
+
+  }
+});
