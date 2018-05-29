@@ -725,3 +725,39 @@ button.swiper-pagination-bullet {
   width: 0;
   height: 0;
 }
+
+/*partners*/
+.swiper-pagination-partners {
+  position: absolute;
+  text-align: center;
+  transition: 300ms opacity;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+  bottom: -70px!important;
+}
+
+.swiper-pagination-bullet-partners {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 100%;
+  background: #000;
+  opacity: .2;
+  margin: 0 4px;
+  transition: .2s transform,.2s left,.2s -webkit-transform;
+  position: relative;
+}
+
+.swiper-pagination-bullet-partners.swiper-pagination-bullet-active {
+  background: $colorPurple;
+  opacity: .8;
+}
+.swiper-pagination-bullet-partners.swiper-pagination-bullet-active:before {
+  content: '';
+  width: 0;
+  height: 0;
+}
+
+.our-partners__pagination .swiper-pagination-bullets-dynamic {
+  white-space: nowrap!important;
+}

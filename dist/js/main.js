@@ -81,9 +81,9 @@ var mySwiper = new Swiper('.slider__container', {
   //loop: true,
   speed: 600,
   effect: 'fade',
-  /*autoplay: {
+  autoplay: {
     delay: 5000,
-  },*/
+  },
   on: {
     init: function () {
       swiperAnimation.init(this).animate();
@@ -122,3 +122,38 @@ var swiperNewProduct = new Swiper('.product-new-main__slider-container', {
 
   }
 });
+
+var swiperPartners = new Swiper('.our-partners__slider-container', {
+  slidesPerView: 4,
+  spaceBetween: 0,
+  // init: false,
+  pagination: {
+    el: '.swiper-pagination-partners',
+    clickable: true,
+    dynamicBullets: true,
+    bulletClass: 'swiper-pagination-bullet-partners'
+  },
+  breakpoints: {
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 0,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 0,
+    },
+    480: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+    }
+  }
+});
+
+/*year copyright*/
+var now = new Date();
+var getYear = now.getFullYear();
+var elCopyrightYear = document.querySelector('#copyright');
+if (elCopyrightYear) {
+  elCopyrightYear.innerHTML = getYear;
+}
+
