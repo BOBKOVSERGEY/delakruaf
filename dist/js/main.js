@@ -101,6 +101,26 @@ var mySwiper = new Swiper('.slider__container', {
   },
 });
 
+var swiperSliderInner = new Swiper('.slider-inner__slider-container', {
+  speed: 600,
+  //effect: 'fade',
+  autoplay: {
+    delay: 5000,
+  },
+  navigation: {
+    nextEl: '.btn-swiper-next',
+    prevEl: '.btn-swiper-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    bulletClass: 'swiper-pagination-bullet-inner-slider',
+    renderBullet: function (index, className) {
+      return '<div class="' + className + '">' + 0 + (index + 1) + '</div>';
+    },
+  },
+});
+
 var swiperAbout = new Swiper('.about-main__slider-container', {
   pagination: {
     el: '.swiper-pagination-about',

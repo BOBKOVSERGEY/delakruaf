@@ -1,0 +1,19 @@
+.header-inner {
+  &__menu-logo {
+    padding: 40px 0;
+  }
+  &__menu-logo-link {
+    text-transform: uppercase;
+    color: #1a1a1d;
+    font-family: $fontMedium;
+    transition: all .3s ease;
+    font-size: 1.5rem;
+    display: inline-block;
+    margin-top: 8px;
+    &:hover {
+      font-family: $fontBold;
+      color: $colorPurple;
+      transform: translateX(1rem);
+    }
+  }
+}

@@ -104,6 +104,38 @@
     }
   }
 }
+.btn-swiper-next, .btn-swiper-prev {
+  background: #fff;
+  height: 85px;
+  width: 85px;
+  padding: 30px;
+  border-radius: 0;
+  outline: none;
+  transition: all .3s ease;
+  &:hover {
+    background: $colorPurple;
+    box-shadow: none;
+  }
+  &:focus {
+    box-shadow: none;
+  }
+}
+.btn-swiper-prev {
+  transform: rotate(180deg);
+}
+.btn-swiper-next {
+  margin-left: -4px;
+}
+.btn-swiper-next.swiper-button-disabled, .btn-swiper-prev.swiper-button-disabled {
+  opacity: .35;
+  cursor: auto;
+  pointer-events: none;
+}
+
+.btn-swiper-next:hover #swiper-btn-next,
+.btn-swiper-prev:hover #swiper-btn-prev {
+  fill: #fff;
+}
 
 @media only screen and (max-width : 1200px) {
   .button {
