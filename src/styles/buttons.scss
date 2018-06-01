@@ -38,9 +38,8 @@
   &--average-add {
     font-size: 13px;
     text-transform: uppercase;
-    width: 73.5px;
-    height: 73.5px;
-    margin-right: -4px;
+    width: 74px;
+    height: 74px;
     background-color: rgba(#fff, 1);
     color: #000;
     border-radius: 0;
@@ -122,9 +121,6 @@
 }
 .btn-swiper-prev {
   transform: rotate(180deg);
-}
-.btn-swiper-next {
-  margin-left: -4px;
 }
 .btn-swiper-next.swiper-button-disabled, .btn-swiper-prev.swiper-button-disabled {
   opacity: .35;

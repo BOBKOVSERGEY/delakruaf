@@ -49,6 +49,7 @@
     right: 15px;
     bottom: 0;
     z-index: 2;
+    font-size: 0;
   }
   &__slider-item-wrapper-img {
     position: relative;
@@ -149,7 +150,7 @@
 
 @media only screen and (max-width : 768px) {
   .slider-inner {
-    &__slider-item-right {
+    &__slider-item-left {
       display: none;
     }
     &__box-bg {
