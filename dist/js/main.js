@@ -186,6 +186,13 @@ var elCopyrightYear = document.querySelector('#copyright');
 if (elCopyrightYear) {
   elCopyrightYear.innerHTML = getYear;
 }
+(function () {
+  var share = document.querySelector('.share__icon');
+  var hint = document.querySelector('.share__hint')
+  share.addEventListener('click', function () {
+    hint.classList.toggle('share__hint--visible');
+  })
+})();
 
 $(function () {
   $('[data-toggle="popover"]').popover({
