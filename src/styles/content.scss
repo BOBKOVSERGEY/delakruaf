@@ -29,6 +29,11 @@
       z-index: 1;
     }
   }
+  &__heading-secondary {
+    font-family: $fontBold;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
   &__heading-sub {
     font-size: 12px;
     text-transform: uppercase;
