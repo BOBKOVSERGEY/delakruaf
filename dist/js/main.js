@@ -132,6 +132,16 @@ var swiperAbout = new Swiper('.about-main__slider-container', {
   }
 });
 
+var swiperProduct = new Swiper('.product__slider-container', {
+  //effect: 'fade',
+  pagination: {
+    el: '.swiper-pagination-product',
+    clickable: true,
+    dynamicBullets: true,
+    bulletClass: 'swiper-pagination-bullet-about'
+  }
+});
+
 var swiperNewProduct = new Swiper('.product-new-main__slider-container', {
   pagination: {
     el: '.swiper-pagination-new-product',

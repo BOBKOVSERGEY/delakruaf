@@ -6,6 +6,7 @@
 @import "swiper";
 @import "animate";
 @import "buttons";
+@import "share";
 
 @import "logo";
 @import "menu";
@@ -16,6 +17,7 @@
 @import "catalog-main";
 @import "catalog-inner";
 @import "content";
+@import "product";
 @import "about-main";
 @import "product-new-main";
 @import "our-partners";
@@ -31,6 +33,7 @@ html {
 body {
   font-family: $fontRegular;
   font-size: $default-font-size;
+  color: #4d4d4f;
 }
 
 ul {

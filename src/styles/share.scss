@@ -1,0 +1,18 @@
+.share {
+  width: 35px;
+  height: 35px;
+  padding: 8px;
+  border: 1px solid #d1d1d1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .3s ease;
+  &--center {
+    margin: 20px auto;
+  }
+  &:hover {
+    border: 1px solid $colorBrown;
+    cursor: pointer;
+  }
+}

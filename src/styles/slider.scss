@@ -16,7 +16,7 @@
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(#fff, .1);
+      //background: rgba(#fff, .1);
     }
   }
   &__pagination {
@@ -33,6 +33,7 @@
     text-align: left;
     margin-left: 10rem;
     position: relative;
+    color: #1a1a1d;
     &:before {
       content: '';
       width: 50px;
@@ -50,6 +51,7 @@
     margin-top: 10rem;
     text-transform: uppercase;
     letter-spacing: 2px;
+    color: #1a1a1d;
   }
   &__button {
     position: absolute;
