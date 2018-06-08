@@ -1,0 +1,87 @@
+.nail-care {
+  padding: 50px 0;
+  margin-bottom: -70px;
+  background-image: linear-gradient(
+                  to right bottom,
+                  rgba(#fff, 0.5),
+                  rgba(#fff, 0.5)), url(../images/bg-slider.jpg);
+  & tr:last-child {
+    border-bottom: 2px solid $colorPurple;
+  }
+
+  &__table {
+    margin-bottom: 30px;
+    & td, & th {
+      vertical-align: middle;
+      border-top: none;
+    }
+    & tbody {
+      border-right: 2px solid $colorPurple;
+    }
+  }
+  &__table-heading-main-wrapper {
+    width: 20%;
+    background: rgba($colorBrown, .8);
+    text-align: center;
+    color: #fff;
+    border-bottom: 2px solid rgba($colorBrown, .8);
+  }
+  &__table-heading-main{
+    font-size: 28px;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+    &:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      z-index: 2;
+      width: 80px;
+      height: 5px;
+      background: #dc3358;
+    }
+
+  }
+  &__table-heading {
+    width: 26.666%;
+    text-align: center;
+    background: rgba($colorPurple, 1);
+    font-size: 21px;
+    color: #fff;
+    font-style: italic;
+    letter-spacing: 2px;
+    font-weight: normal;
+
+  }
+  &__table-heading:not(:last-child) {
+    border-right: 1px solid #fff;
+  }
+  &__table-row-white {
+    background: #fff;
+    font-size: 14px;
+    transition: all .3s ease;
+    &:hover {
+      background: #ccc;
+    }
+    & td:nth-child(2) {
+      background: rgba($colorPurple, .2);
+    }
+    & td {
+      padding: 15px;
+    }
+  }
+  &__table-row-pink {
+    background: #FBEAEE;
+    font-size: 14px;
+    transition: all .3s ease;
+    &:hover {
+      background: #ccc;
+    }
+    & td:nth-child(2) {
+      background: rgba($colorPurple, .2);
+    }
+    & td {
+      padding: 15px;
+    }
+  }
+}
