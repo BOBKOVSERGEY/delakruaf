@@ -186,13 +186,82 @@ var elCopyrightYear = document.querySelector('#copyright');
 if (elCopyrightYear) {
   elCopyrightYear.innerHTML = getYear;
 }
+/*button share*/
 (function () {
   var share = document.querySelector('.share__icon');
-  var hint = document.querySelector('.share__hint')
-  share.addEventListener('click', function () {
-    hint.classList.toggle('share__hint--visible');
-  })
+  var hint = document.querySelector('.share__hint');
+  if (share) {
+    share.addEventListener('click', function () {
+      hint.classList.toggle('share__hint--visible');
+    })
+  }
 })();
+
+(function () {
+  var googleMap = document.getElementById("map");
+  if (googleMap) {
+    // initMap() - функция инициализации карты
+    //noinspection JSAnnotator
+    function initMap() {
+      // Координаты центра на карте. Широта: 56.2928515, Долгота: 43.7866641
+      var centerLatLng = new google.maps.LatLng(55.7184502, 37.6785179);
+      // Обязательные опции с которыми будет проинициализированна карта
+      var mapOptions = {
+        center: centerLatLng, // Координаты центра мы берем из переменной centerLatLng
+        zoom: 15,               // Зум по умолчанию. Возможные значения от 0 до 21
+        scrollwheel: false,
+        //styles:
+
+      };
+      // Создаем карту внутри элемента #map
+      var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+      // Создаем маркер на карте
+      var marker = new google.maps.Marker({
+
+        // Определяем позицию маркера
+        position: {lat: 55.7184502, lng: 37.6785179},
+
+        // Указываем на какой карте он должен появится. (На странице ведь может быть больше одной карты)
+        map: map,
+
+        // Пишем название маркера - появится если навести на него курсор и немного подождать
+        title: 'Delakrua',
+        // Укажем свою иконку для маркера
+        icon: 'dist/images/map-marker.png'
+
+      });
+
+      // Создаем наполнение для информационного окна
+      var contentString = '<div>'+
+        '<div>'+
+        '</div>'+
+        '<h3>Delakrua</h3>'+
+        '<div>'+
+        '<p>Cерия профессиональных средств по уходу за ногтями</p>'+
+          '<p>г. Москва, станция метро Дубровка, ТК Дубровка, Линия 5, Место 190</p>'+
+        '<p>Сайт: <a href="//www.delakrua.com" target="blank">www.delakrua.com</a>'+
+        '</p>'+
+        '</div>'+
+        '</div>';
+
+      // Создаем информационное окно
+      var infowindow = new google.maps.InfoWindow({
+        content: contentString,
+        maxWidth: 400
+      });
+
+      // Создаем прослушивание, по клику на маркер - открыть инфо-окно infowindow
+      marker.addListener('click', function() {
+        infowindow.open(map, marker);
+      });
+    }
+// Ждем полной загрузки страницы, после этого запускаем initMap()
+    google.maps.event.addDomListener(window, "load", initMap);
+  }
+
+})();
+
 
 $(function () {
   $('[data-toggle="popover"]').popover({
