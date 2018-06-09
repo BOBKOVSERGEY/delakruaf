@@ -12,6 +12,12 @@
   }
   &__logo {
     margin-top: 130px;
+    & img {
+      transition: all .3s ease;
+      &:hover {
+        transform: scale(.9);
+      }
+    }
   }
   &__block-heading {
     display: flex;

@@ -263,7 +263,21 @@ if (elCopyrightYear) {
 })();
 
 
+
+
 $(function () {
+  /*** policy ***/
+  $('.js-policy').on('click', function($el){
+    checkPolicy();
+  });
+  /*** end policy ***/
+  function checkPolicy () {
+    if ($(".js-policy").is(':checked')) {
+      $("[type=submit]").prop('disabled', false);
+    } else {
+      $("[type=submit]").prop('disabled', true);
+    }
+  };
   $('[data-toggle="popover"]').popover({
     html: true
     }

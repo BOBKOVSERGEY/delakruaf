@@ -1,4 +1,19 @@
 .button {
+  &--form {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #ffffff;
+    border-radius: 30px;
+    background-color: $colorBrown;
+    padding: 7px 0;
+    &:hover {
+      //color: #fff;
+      background-color: $colorPurple;
+    }
+    &:focus {
+      box-shadow: none;
+    }
+  }
   &--round {
     font-size: 13px;
     background-color: $colorPurple;
@@ -131,6 +146,13 @@
 .btn-swiper-next:hover #swiper-btn-next,
 .btn-swiper-prev:hover #swiper-btn-prev {
   fill: #fff;
+}
+
+.btn.disabled, .btn[disabled], fieldset[disabled] .btn {
+  cursor: not-allowed;
+  filter: alpha(opacity=65);
+  box-shadow: none;
+  opacity: .65;
 }
 
 @media only screen and (max-width : 1200px) {
