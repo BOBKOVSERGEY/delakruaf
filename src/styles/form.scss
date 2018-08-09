@@ -39,6 +39,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 30px;
+    position: relative;
     & input {
       flex: 2;
       height: 30px;
@@ -56,6 +57,12 @@
         border: 1px solid $colorBrown;
         transform: scale(1.02);
       }
+    }
+    & label.error {
+      position: absolute;
+      right: 10px;
+      font-size: 10px;
+      color: $colorPurple;
     }
   }
   &__input-label {

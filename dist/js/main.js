@@ -266,6 +266,27 @@ if (elCopyrightYear) {
 
 
 $(function () {
+  /*form-bid*/
+  $('.form-bid').validate({
+    rules: {
+      nameCompany: {
+        required: true,
+      },
+      email: {
+        required: true,
+        email: true
+      }
+    },
+    messages: {
+      nameCompany: {
+        required: "Представьтесь пожалуйста"
+      },
+      email: {
+        required: "Введите адрес электронной почты",
+        email: "Не корректный адрес электронной почты"
+      }
+    }
+  });
   /*** policy ***/
   $('.js-policy').on('click', function($el){
     checkPolicy();
