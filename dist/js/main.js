@@ -134,6 +134,10 @@ var swiperAbout = new Swiper('.about-main__slider-container', {
 
 var swiperProduct = new Swiper('.product__slider-container', {
   //effect: 'fade',
+  navigation: {
+    nextEl: '.product__btn-next',
+    prevEl: '.product__btn-prev',
+  },
   pagination: {
     el: '.swiper-pagination-product',
     clickable: true,
