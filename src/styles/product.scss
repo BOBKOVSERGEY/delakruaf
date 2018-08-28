@@ -13,7 +13,7 @@
     z-index: 10;
     cursor: pointer;
     outline: none;
-    padding: 15px;
+    padding: 30px;
     transition: all .3s;
   }
   &__btn-next.swiper-button-disabled, &__btn-prev.swiper-button-disabled {
@@ -58,7 +58,8 @@
     position: relative;
     height: 800px;
     background-position: center;
-    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
     &:after {
       content: '';
       position: absolute;
@@ -131,7 +132,7 @@
     &__btn-next, &__btn-prev {
       width: 50px;
       height: 50px;
-
+      padding: 15px;
     }
     &__btn-next {
       right: -40px;
@@ -146,7 +147,7 @@
     &__btn-next, &__btn-prev {
       width: 35px;
       height: 35px;
-      padding: 5px;
+      padding: 7px;
 
     }
     &__btn-next {
